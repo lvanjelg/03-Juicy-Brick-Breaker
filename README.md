@@ -3,7 +3,6 @@
 A starting place for Project 03
 
 
-```
 # Project Name
 Context and date
 
@@ -18,4 +17,4 @@ Which features you included
 ## Future Development
 
 ## Created by
-```
+Luke Van Jelgerhuis
