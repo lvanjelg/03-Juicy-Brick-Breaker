@@ -9,7 +9,8 @@ Context and date
 Description
 
 ## Implementation
-Which features you included
+Eyes and mouth on paddle
+Changed paddle and ball sprites
 
 ## References
  * [Juice it or lose it — a talk by Martin Jonasson & Petri Purho](https://www.youtube.com/watch?v=Fy0aCDmgnxg)
