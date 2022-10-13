@@ -11,6 +11,7 @@ Description
 ## Implementation
 * Eyes and mouth on paddle
 * Changed paddle and ball sprites
+* Implemented sound effects
 
 ## References
 * [Juice it or lose it — a talk by Martin Jonasson & Petri Purho](https://www.youtube.com/watch?v=Fy0aCDmgnxg)
