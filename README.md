@@ -14,6 +14,7 @@ Description
 * Implemented sound effects
 * Changed brick color
 * Added background
+* Added comet trail for ball
 
 ## References
 * [Juice it or lose it — a talk by Martin Jonasson & Petri Purho](https://www.youtube.com/watch?v=Fy0aCDmgnxg)
