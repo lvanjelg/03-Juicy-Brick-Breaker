@@ -1,6 +1,6 @@
 # Brick-Breaker
 
-Project 3 for MSCH-G 220 Game Technologies\n
+Project 3 for MSCH-G 220 Game Technologies \n
 03-Juicy-Brick-Breaker - October 14
 
 ## Implementation
