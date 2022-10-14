@@ -11,6 +11,7 @@
 * Added background
 * Added comet trail for ball
 * Added tweening to ball
+* Added tweening to bricks
 
 ## References
 * [Juice it or lose it — a talk by Martin Jonasson & Petri Purho](https://www.youtube.com/watch?v=Fy0aCDmgnxg)
