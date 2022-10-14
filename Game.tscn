@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Brick/Brick_Container.gd" type="Script" id=1]
 [ext_resource path="res://Paddle/Paddle.tscn" type="PackedScene" id=2]
@@ -9,6 +9,12 @@
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/Instructions.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Effects/Fever.gd" type="Script" id=9]
+[ext_resource path="res://Assets/die.wav" type="AudioStream" id=10]
+[ext_resource path="res://Assets/brick.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/paddle.wav" type="AudioStream" id=12]
+[ext_resource path="res://Assets/wall.wav" type="AudioStream" id=13]
+[ext_resource path="res://Assets/background.png" type="Texture" id=14]
+[ext_resource path="res://Effects/Comet_Container.gd" type="Script" id=15]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 100, 500 )
@@ -18,6 +24,10 @@ extents = Vector2( 612, 100 )
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 4 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 512, 400 )
+texture = ExtResource( 14 )
 
 [node name="Wall_Container" type="Node2D" parent="."]
 
@@ -62,6 +72,7 @@ position = Vector2( 512, -90 )
 shape = SubResource( 2 )
 
 [node name="Brick_Container" type="Node2D" parent="."]
+pause_mode = 2
 script = ExtResource( 1 )
 
 [node name="Paddle_Container" type="Node2D" parent="."]
@@ -71,6 +82,9 @@ position = Vector2( 462, 720 )
 
 [node name="Ball_Container" type="Node2D" parent="."]
 script = ExtResource( 3 )
+
+[node name="Comet_Container" type="Node2D" parent="."]
+script = ExtResource( 15 )
 
 [node name="Powerup_Container" type="Node2D" parent="."]
 
@@ -90,5 +104,17 @@ visible = false
 
 [node name="Instructions" parent="UI" instance=ExtResource( 8 )]
 pause_mode = 2
+
+[node name="Paddle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+
+[node name="Wall" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+
+[node name="Brick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="Die" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
 
 [connection signal="timeout" from="Fever/Timer" to="Fever" method="_on_Timer_timeout"]
