@@ -1,7 +1,7 @@
 # Brick-Breaker
 
-Project 3 for MSCH-G 220 Game Technologies /n
-03-Juicy-Brick-Breaker - October 14
+* Project 3 for MSCH-G 220 Game Technologies
+* 03-Juicy-Brick-Breaker - October 14
 
 ## Implementation
 * Eyes and mouth on paddle
