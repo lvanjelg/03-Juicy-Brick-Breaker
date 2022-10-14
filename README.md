@@ -1,12 +1,7 @@
 # Brick-Breaker
 
-A starting place for Project 03
-
-
-# Project Name
-Context and date
-
-Description
+Project 3 for MSCH-G 220 Game Technologies\n
+03-Juicy-Brick-Breaker - October 14
 
 ## Implementation
 * Eyes and mouth on paddle
